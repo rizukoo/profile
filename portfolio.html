@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Muhammad Luthfi Rizaldi</title>
+    <title>Karya Portofolio | Muhammad Luthfi Rizaldi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #f8fafc; }
-        h1, h2, h3 { font-family: 'Syne', sans-serif; }
-        .project-card { transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1); }
+        
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: #f8fafc;
+        }
+
+        h1, h2, h3, .font-syne {
+            font-family: 'Syne', sans-serif;
+        }
+
+        .project-card {
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
     </style>
 </head>
-<body class="text-slate-900">
+<body class="text-slate-900 selection:bg-indigo-500 selection:text-white">
 
     <!-- NAVIGASI -->
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-xl border-b border-slate-100 z-50">
@@ -22,97 +37,108 @@
             </div>
             <div class="flex gap-8 text-xs font-bold uppercase tracking-widest">
                 <a href="index.html" class="text-slate-400 hover:text-indigo-600 transition">Beranda</a>
-                <a href="portfolio.html" class="text-indigo-600 border-b-2 border-indigo-600">Portofolio</a>
+                <a href="portofolio.html" class="text-indigo-600 border-b-2 border-indigo-600">Portofolio</a>
                 <a href="kontak.html" class="text-slate-400 hover:text-indigo-600 transition">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <!-- PORTFOLIO SECTION -->
-    <section class="pt-40 pb-20 px-6">
+    <!-- HEADER HALAMAN -->
+    <header class="pt-40 pb-16 px-6 hero-pattern">
         <div class="max-w-6xl mx-auto">
-            <header class="mb-20">
-                <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-6 leading-none">
-                    Work <br> <span class="text-indigo-600">Gallery.</span>
-                </h1>
-                <p class="text-slate-500 font-medium max-w-lg">Koleksi karya desain grafis terpilih, mulai dari identitas visual hingga desain promosi cetak.</p>
-            </header>
-
-            <!-- Baris Logo -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <!-- Karya 1: Logo 1 -->
-                <div class="group project-card">
-                    <div class="bg-white rounded-[2rem] aspect-square mb-6 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-xl flex items-center justify-center p-12">
-                        <img src="https://www.image2url.com/r2/default/images/1777342179665-5461651d-7525-4605-abb2-c1dd610dfaf9.png" 
-                             alt="Logo Rizal 1" 
-                             class="w-full h-auto object-contain group-hover:scale-110 transition duration-500">
-                    </div>
-                    <span class="text-[10px] font-black uppercase text-indigo-600 tracking-widest">Logo Design</span>
-                    <h3 class="text-xl font-bold mt-1 uppercase italic">Identity Concept v1</h3>
-                </div>
-
-                <!-- Karya 2: Logo Visual Mark -->
-                <div class="group project-card">
-                    <div class="bg-white rounded-[2rem] aspect-square mb-6 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-xl flex items-center justify-center p-12">
-                        <img src="https://www.image2url.com/r2/default/images/1777342298464-13f82c9d-ab1c-46d9-9516-ae15488cffb6.png" 
-                             alt="Logo Visual Mark" 
-                             class="w-full h-auto object-contain group-hover:scale-110 transition duration-500">
-                    </div>
-                    <span class="text-[10px] font-black uppercase text-indigo-600 tracking-widest">Logo Design</span>
-                    <h3 class="text-xl font-bold mt-1 uppercase italic">Visual Mark</h3>
-                </div>
-            </div>
-
-            <!-- Baris Desain Cetak & Banner -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Karya 3: Packaging -->
-                <div class="group project-card">
-                    <div class="bg-white rounded-[2.5rem] aspect-[4/3] mb-6 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-xl">
-                        <img src="https://tmpfiles.org/dl/35484455/tmp.jpg" 
-                             alt="Packaging Rizal" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="px-2">
-                        <span class="text-[10px] font-black uppercase text-indigo-600 tracking-widest">Packaging</span>
-                        <h3 class="text-2xl font-bold mt-1 uppercase italic">Product Packaging Design</h3>
-                        <p class="text-slate-500 text-sm mt-2">Eksplorasi desain kemasan dengan fokus pada estetika dan informasi produk.</p>
-                    </div>
-                </div>
-
-                <!-- Karya 4: Banner 1 -->
-                <div class="group project-card">
-                    <div class="bg-white rounded-[2.5rem] aspect-[4/3] mb-6 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-xl">
-                        <img src="https://tmpfiles.org/dl/35484401/tmp.jpg" 
-                             alt="Banner Rizal 1" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="px-2">
-                        <span class="text-[10px] font-black uppercase text-indigo-600 tracking-widest">Graphic Design</span>
-                        <h3 class="text-2xl font-bold mt-1 uppercase italic">Promotional Banner v1</h3>
-                        <p class="text-slate-500 text-sm mt-2">Layouting banner promosi menggunakan grid sistematis.</p>
-                    </div>
-                </div>
-
-                <!-- Karya 5: Banner 2 (Baru ditambahkan) -->
-                <div class="group project-card md:col-span-2">
-                    <div class="bg-white rounded-[2.5rem] aspect-[21/9] mb-6 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-xl">
-                        <img src="https://tmpfiles.org/dl/35484390/tmp.jpg" 
-                             alt="Banner Rizal 2" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="px-2">
-                        <span class="text-[10px] font-black uppercase text-indigo-600 tracking-widest">Graphic Design</span>
-                        <h3 class="text-2xl font-bold mt-1 uppercase italic">Promotional Banner v2</h3>
-                        <p class="text-slate-500 text-sm mt-2">Desain banner promosi tambahan dengan komposisi visual yang dinamis.</p>
-                    </div>
-                </div>
-            </div>
+            <span class="text-indigo-600 font-black uppercase text-[10px] tracking-[0.3em] mb-4 block">Hasil Eksplorasi DKV</span>
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter uppercase mb-6 leading-none">
+                Selected <br> <span class="italic text-indigo-600">Works.</span>
+            </h1>
+            <p class="max-w-xl text-slate-500 font-medium text-lg">Kumpulan proyek desain grafis pilihan yang berfokus pada branding, layouting, dan komunikasi visual.</p>
         </div>
-    </section>
+    </header>
+
+    <!-- GRID PORTOFOLIO -->
+    <main class="pb-32 px-6">
+        <div class="max-w-6xl mx-auto space-y-24">
+            
+            <!-- SECTION 1: LOGO & BRANDING -->
+            <section>
+                <h2 class="text-xs font-black uppercase tracking-[0.4em] text-slate-400 mb-10 border-b pb-4">01. Logo & Identity</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Logo 1 -->
+                    <div class="group project-card">
+                        <div class="bg-white rounded-[2.5rem] aspect-square mb-6 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-2xl flex items-center justify-center p-16 transition-all duration-500">
+                            <img src="https://www.image2url.com/r2/default/images/1777342179665-5461651d-7525-4605-abb2-c1dd610dfaf9.png" 
+                                 alt="Identity Concept v1" 
+                                 class="w-full h-auto object-contain group-hover:scale-110 transition duration-700">
+                        </div>
+                        <h3 class="text-2xl font-bold italic uppercase tracking-tighter">Identity Concept v1</h3>
+                        <p class="text-slate-500 text-sm mt-2 font-medium">Eksperimen logo minimalis dengan penekanan pada bentuk geometris.</p>
+                    </div>
+
+                    <!-- Logo 2 -->
+                    <div class="group project-card">
+                        <div class="bg-white rounded-[2.5rem] aspect-square mb-6 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-2xl flex items-center justify-center p-16 transition-all duration-500">
+                            <img src="https://www.image2url.com/r2/default/images/1777342298464-13f82c9d-ab1c-46d9-9516-ae15488cffb6.png" 
+                                 alt="Visual Mark" 
+                                 class="w-full h-auto object-contain group-hover:scale-110 transition duration-700">
+                        </div>
+                        <h3 class="text-2xl font-bold italic uppercase tracking-tighter">Visual Mark</h3>
+                        <p class="text-slate-500 text-sm mt-2 font-medium">Pengembangan simbol visual yang kuat untuk personal branding.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: PRINT & PROMOTION -->
+            <section>
+                <h2 class="text-xs font-black uppercase tracking-[0.4em] text-slate-400 mb-10 border-b pb-4">02. Print & Layout</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Packaging -->
+                    <div class="group project-card">
+                        <div class="bg-white rounded-[3rem] aspect-[4/3] mb-8 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+                            <img src="https://tmpfiles.org/dl/35484455/tmp.jpg" 
+                                 alt="Packaging Design" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        </div>
+                        <h3 class="text-2xl font-bold italic uppercase tracking-tighter">Product Packaging Design</h3>
+                        <p class="text-slate-500 text-sm mt-2 font-medium max-w-sm">Desain kemasan produk yang menggabungkan elemen informatif dan daya tarik visual.</p>
+                    </div>
+
+                    <!-- Banner 1 -->
+                    <div class="group project-card">
+                        <div class="bg-white rounded-[3rem] aspect-[4/3] mb-8 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+                            <img src="https://tmpfiles.org/dl/35484401/tmp.jpg" 
+                                 alt="Promotional Banner v1" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        </div>
+                        <h3 class="text-2xl font-bold italic uppercase tracking-tighter">Promotional Banner v1</h3>
+                        <p class="text-slate-500 text-sm mt-2 font-medium max-w-sm">Layout banner promosi untuk keperluan media cetak dan digital.</p>
+                    </div>
+
+                    <!-- Banner 2 (Wide View) -->
+                    <div class="group project-card md:col-span-2">
+                        <div class="bg-white rounded-[3rem] aspect-[21/9] mb-8 overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-2xl transition-all duration-500">
+                            <img src="https://tmpfiles.org/dl/35484390/tmp.jpg" 
+                                 alt="Promotional Banner v2" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        </div>
+                        <h3 class="text-2xl font-bold italic uppercase tracking-tighter text-center">Digital Marketing Banner v2</h3>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- CTA UNTUK KONTAK -->
+        <div class="max-w-6xl mx-auto mt-32 bg-indigo-600 rounded-[3rem] p-12 md:p-20 text-center text-white overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32 blur-3xl"></div>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tighter uppercase mb-8 relative z-10">Tertarik Bekerja <br> Bersama?</h2>
+            <a href="kontak.html" class="inline-block bg-white text-indigo-600 px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-slate-100 transition shadow-xl relative z-10">
+                Hubungi Rizal Sekarang →
+            </a>
+        </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="py-10 text-center border-t border-slate-100 bg-white">
-        <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">© 2026 Rizal Rizaldi • SMKN 1 Batang</p>
+        <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">© 2026 Rizal Rizaldi • DKV SMKN 1 Batang</p>
     </footer>
 
 </body>
